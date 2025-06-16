@@ -13,6 +13,12 @@
       "default_title": "Up Learn Complete",
       "default_popup": "popup/popup.html"
     },
+    "content_scripts": [
+      {
+        "matches": ["*://web.uplearn.co.uk/*"],
+        "js": ["complete.js"]
+      }
+    ],
     "permissions": [
 
     ]
