@@ -1,0 +1,20 @@
+POST /api/ HTTP/2
+Host: web.uplearn.co.uk
+User-Agent: [nope]
+Accept: */*
+Accept-Language: en-GB,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Referer: https://web.uplearn.co.uk/learn/physics-aqa-13-papers-1-2/describing-simple-harmonic-motion/describing-simple-harmonic-motion-progress-quiz-4-quizzes
+content-type: application/json
+authorization: Bearer [nope]
+Content-Length: 238
+Origin: https://web.uplearn.co.uk
+DNT: 1
+Sec-GPC: 1
+Connection: keep-alive
+Cookie: [nope]
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=4
+TE: trailers

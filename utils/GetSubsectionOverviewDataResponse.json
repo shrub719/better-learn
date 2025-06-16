@@ -1,0 +1,795 @@
+{
+    "data": {
+      "subsection": {
+        "__typename": "Subsection",
+        "articleLessons": [
+          {
+            "activityType": "ArticleLesson",
+            "completed": true,
+            "id": "32117",
+            "length": "141.12",
+            "orderNumber": 3,
+            "title": "Why is it called Simple Harmonic Motion? - Article",
+            "uniqueCode": "why-is-it-called-simple-harmonic-motion-article-video"
+          },
+          {
+            "activityType": "ArticleLesson",
+            "completed": true,
+            "id": "32070",
+            "length": "168.48",
+            "orderNumber": 14,
+            "title": "Maximum Acceleration - Article",
+            "uniqueCode": "maximum-acceleration-article-video"
+          },
+          {
+            "activityType": "ArticleLesson",
+            "completed": true,
+            "id": "31955",
+            "length": "418.56",
+            "orderNumber": 22,
+            "title": "Deriving the Equation for Displacement - Article",
+            "uniqueCode": "deriving-the-equation-for-displacement-article-video"
+          },
+          {
+            "activityType": "ArticleLesson",
+            "completed": true,
+            "id": "31956",
+            "length": "354.72",
+            "orderNumber": 29,
+            "title": "Deriving the Defining Equation - Article",
+            "uniqueCode": "deriving-the-defining-equation-article-video"
+          },
+          {
+            "activityType": "ArticleLesson",
+            "completed": true,
+            "id": "32201",
+            "length": "479.52",
+            "orderNumber": 1000,
+            "title": "Deriving the Speed Equation – Article",
+            "uniqueCode": "deriving-the-speed-equation-article-video"
+          }
+        ],
+        "currentUserScore": "9",
+        "definitionGroups": [],
+        "examHowToLessons": [],
+        "icon": "fa-adjust",
+        "id": "5158",
+        "isDiagnosticQuizEnabled": true,
+        "locked": false,
+        "module": {
+          "__typename": "Module",
+          "currentUserEnrolment": {
+            "__typename": "Enrolment",
+            "enrolmentPlan": "Up School Gold",
+            "id": "3077939",
+            "isActive": true,
+            "isTrial": false
+          },
+          "examBoardSubject": {
+            "__typename": "ExamBoardSubject",
+            "board": "AQA",
+            "boardName": "AQA",
+            "boardObject": {
+              "__typename": "Board",
+              "id": "1"
+            },
+            "id": "19",
+            "subject": "Physics",
+            "subjectName": "Physics",
+            "subjectObject": {
+              "__typename": "Subject",
+              "id": "49",
+              "qualification": {
+                "__typename": "Qualification",
+                "uniqueCode": "a-level"
+              }
+            }
+          },
+          "id": "73",
+          "releaseType": "FULL_MODULE",
+          "schoolYear": "COMBINED",
+          "subtitle": "Year 12 & 13",
+          "title": "Papers 1 & 2",
+          "uniqueCode": "physics-aqa-13-papers-1-2"
+        },
+        "name": "Describing Simple Harmonic Motion",
+        "postActivitiesNotice": null,
+        "preActivitiesNotice": null,
+        "progressQuizGroups": [
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14467",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 4,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77658"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77659"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77660"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-mastery-quiz-1-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14500",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 6,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77791"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77792"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77793"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-mastery-quiz-2-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14501",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 8,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77794"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77795"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-mastery-quiz-3-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14713",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 11,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78709"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78710"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78714"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78712"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78713"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-mastery-quiz-4-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14502",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 13,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77796"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77797"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77798"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77799"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-mastery-quiz-5-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14503",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 15,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77800"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77801"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77802"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-mastery-quiz-6-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14504",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 16,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77803"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77804"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-progress-quiz-1-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14505",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 18,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77805"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77806"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77807"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77808"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-mastery-quiz-7-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14506",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 20,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77809"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77810"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-mastery-quiz-8-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14507",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 21,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77811"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77812"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-progress-quiz-2-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14715",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 24,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78718"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78719"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78720"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-mastery-quiz-9-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14508",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 25,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77813"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-progress-quiz-3-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14716",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 27,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78721"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78722"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78723"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78724"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-mastery-quiz-10-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14714",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 28,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78716"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78717"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-progress-quiz-4-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14511",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 31,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77824"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77825"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77826"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77827"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-mastery-quiz-11-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14512",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 32,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77828"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "77829"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-mastery-quiz-12-quizzes"
+          },
+          {
+            "activityType": "ProgressQuizGroup",
+            "completed": true,
+            "id": "14717",
+            "name": "Quiz: Describing Simple Harmonic Motion",
+            "orderNumber": 33,
+            "progressQuizQuestions": [
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78725"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78726"
+              },
+              {
+                "__typename": "ProgressQuizQuestion",
+                "id": "78727"
+              }
+            ],
+            "quizType": null,
+            "uniqueCode": "describing-simple-harmonic-motion-progress-quiz-5-quizzes"
+          }
+        ],
+        "subsectionNumber": 149,
+        "subsectionQuizAvailable": true,
+        "subsectionQuizSession": {
+          "__typename": "SubsectionQuizSession",
+          "currentStep": null,
+          "id": null
+        },
+        "summary": {
+          "__typename": "SubsectionSummary",
+          "id": "1988",
+          "released": true,
+          "wistiaVideoDuration": "134.0"
+        },
+        "uniqueCode": "describing-simple-harmonic-motion",
+        "videoLessons": [
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32191",
+            "inVideoQuizQuestions": [
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107208"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107209"
+              }
+            ],
+            "length": "93.48",
+            "orderNumber": 0,
+            "title": "Displacement in Simple Harmonic Motion",
+            "uniqueCode": "displacement-in-simple-harmonic-motion-video"
+          },
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32186",
+            "inVideoQuizQuestions": [],
+            "length": "40.79",
+            "orderNumber": 1,
+            "title": "Introduction to Simple Harmonic Motion",
+            "uniqueCode": "introduction-to-simple-harmonic-motion-video"
+          },
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32190",
+            "inVideoQuizQuestions": [
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107207"
+              }
+            ],
+            "length": "153.62",
+            "orderNumber": 2,
+            "title": "What is Simple Harmonic Motion?",
+            "uniqueCode": "what-is-simple-harmonic-motion-video"
+          },
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32203",
+            "inVideoQuizQuestions": [
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107238"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107239"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107240"
+              }
+            ],
+            "length": "139.53",
+            "orderNumber": 5,
+            "title": "Restoring Force",
+            "uniqueCode": "restoring-force-video"
+          },
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32204",
+            "inVideoQuizQuestions": [
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107241"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107242"
+              }
+            ],
+            "length": "137.9",
+            "orderNumber": 7,
+            "title": "First Condition for Simple Harmonic Motion",
+            "uniqueCode": "first-condition-for-simple-harmonic-motion-video"
+          },
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32187",
+            "inVideoQuizQuestions": [
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107197"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107198"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107199"
+              }
+            ],
+            "length": "182.91",
+            "orderNumber": 9,
+            "title": "Second Condition for Simple Harmonic Motion",
+            "uniqueCode": "second-condition-for-simple-harmonic-motion-video"
+          },
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32188",
+            "inVideoQuizQuestions": [
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107200"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107201"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107202"
+              }
+            ],
+            "length": "135.5",
+            "orderNumber": 10,
+            "title": "The Defining Equation for SHM",
+            "uniqueCode": "the-defining-equation-for-shm-video"
+          },
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32189",
+            "inVideoQuizQuestions": [
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107203"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107204"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107205"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107206"
+              }
+            ],
+            "length": "218.71",
+            "orderNumber": 12,
+            "title": "Angular Frequency",
+            "uniqueCode": "angular-frequency-video"
+          },
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32192",
+            "inVideoQuizQuestions": [
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107210"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107211"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107212"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107213"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107214"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107215"
+              }
+            ],
+            "length": "187.66",
+            "orderNumber": 17,
+            "title": "The x-t Graph",
+            "uniqueCode": "the-xt-graph-video"
+          },
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32193",
+            "inVideoQuizQuestions": [
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107216"
+              }
+            ],
+            "length": "84.03",
+            "orderNumber": 19,
+            "title": "An Equation Linking x and t",
+            "uniqueCode": "an-equation-linking-x-and-t-video"
+          },
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32200",
+            "inVideoQuizQuestions": [
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107221"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107222"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107223"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107224"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107237"
+              }
+            ],
+            "length": "178.56",
+            "orderNumber": 23,
+            "title": "The v-t Graph",
+            "uniqueCode": "the-vt-graph-video"
+          },
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32205",
+            "inVideoQuizQuestions": [
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107243"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107244"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107245"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107246"
+              }
+            ],
+            "length": "164.03",
+            "orderNumber": 26,
+            "title": "The a-t Graph",
+            "uniqueCode": "the-at-graph-video"
+          },
+          {
+            "activityType": "VideoLesson",
+            "completed": true,
+            "id": "32194",
+            "inVideoQuizQuestions": [
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107217"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107218"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107219"
+              },
+              {
+                "__typename": "InVideoQuestion",
+                "id": "107220"
+              }
+            ],
+            "length": "144.66",
+            "orderNumber": 30,
+            "title": "The Speed Equation",
+            "uniqueCode": "the-speed-equation-video"
+          }
+        ]
+      }
+    }
+  }

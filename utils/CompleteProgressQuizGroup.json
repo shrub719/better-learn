@@ -1,0 +1,7 @@
+{
+    "operationName": "CompleteProgressQuizGroup",
+    "variables": {
+        "progressQuizGroupId": "14714"
+    },
+    "query": "mutation CompleteProgressQuizGroup($progressQuizGroupId: ID!) {\n  completeProgressQuizGroup(progressQuizGroupId: $progressQuizGroupId)\n}"
+}

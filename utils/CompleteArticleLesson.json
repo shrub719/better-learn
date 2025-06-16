@@ -1,0 +1,8 @@
+{
+    "operationName": "CompleteArticleLesson",
+    "variables": {
+        "lessonId": "31956",
+        "timeSpent": 5.547
+    },
+    "query": "mutation CompleteArticleLesson($lessonId: ID!, $timeSpent: Decimal!) {\n  completeArticleLesson(lessonId: $lessonId, timeSpent: $timeSpent) {\n    id\n    __typename\n  }\n}"
+}

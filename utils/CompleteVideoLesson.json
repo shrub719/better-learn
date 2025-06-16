@@ -1,0 +1,9 @@
+{
+    "operationName": "CompleteVideoLesson",
+    "variables": {
+        "lessonId": "32194",
+        "percentWatched": 0.51,
+        "timeSpent": 73.31
+    },
+    "query": "mutation CompleteVideoLesson($lessonId: ID!, $timeSpent: Decimal!, $percentWatched: Decimal!) {\n  completeVideoLesson(\n    lessonId: $lessonId\n    timeSpent: $timeSpent\n    percentWatched: $percentWatched\n  ) {\n    id\n    timeSpent\n    __typename\n  }\n}"
+}
