@@ -22,8 +22,8 @@
 
   "content_scripts": [
     {
-      "matches": ["*://web.uplearn.co.uk/*"],
-      "js": ["content.js"]
+        "matches": ["*://web.uplearn.co.uk/*"],
+        "js": ["content.js"]
     }
   ],
 
