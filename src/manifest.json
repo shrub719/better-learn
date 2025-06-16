@@ -1,30 +1,36 @@
 {
   "manifest_version": 3,
-    "name": "Up Learn Complete",
-    "description": "Automatically complete Up Learn homework assignments.",
-    "version": "0.0.0",
-    "browser_specific_settings": {
-      "gecko": {
-        "id": "uplearn-complete@shrub719.com"
-      }
-    },
-    "icons": {
-      "16": "icons/icon-16.png",
-      "32": "icons/icon-32.png",
-      "48": "icons/icon-48.png",
-      "128": "icons/icon-128.png"
-    },
-    "action": {
-      "default_title": "Up Learn Complete",
-      "default_popup": "popup/popup.html"
-    },
-    "content_scripts": [
-      {
-        "matches": ["*://web.uplearn.co.uk/*"],
-        "js": ["complete.js"]
-      }
-    ],
-    "permissions": [
+  "name": "Up Learn Complete",
+  "description": "Automatically complete Up Learn homework assignments.",
+  "version": "0.0.1",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "uplearn-complete@shrub719.com"
+    }
+  },
 
-    ]
+  "action": {
+    "default_title": "Up Learn Complete",
+    "default_popup": "popup/popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://web.uplearn.co.uk/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://web.uplearn.co.uk/*"
+  ]
 }
