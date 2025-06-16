@@ -81,7 +81,21 @@ function completeQuiz(auth, quiz) {
     apiFetch(auth, body);
 }
 
-function completeVideo(auth, video) {
+ function completeInVideoQuestion(auth, question) {
+    console.log("# completeInVideoQuestion");
+    const id = question.id;
+    const body = {
+        "operationName": "AnswerInVideoQuestion",
+        "variables" :{
+            "questionId": id,
+            "responses": [{ }]
+        },
+        "query": "mutation AnswerInVideoQuestion($questionId: ID!, $responses: [QuestionResponse]!) {\n  answerInVideoQuestion(questionId: $questionId, responses: $responses) {\n    responses {\n      ...Response\n      __typename\n    }\n    question {\n      quizContent {\n        __typename\n        ...MarkedQuestion\n      }\n      __typename\n    }\n    __typename\n  }\n}\n\nfragment Response on MarkingResponse {\n  responseId\n  correct\n  feedbacks {\n    correctness\n    fieldIndex\n    messages {\n      type\n      content\n      __typename\n    }\n    __typename\n  }\n  __typename\n}\n\nfragment MarkedQuestion on QuizContent {\n  __typename\n  quizDefinition {\n    __typename\n    questions {\n      ...MarkedQuestionPart\n      __typename\n    }\n    explanation {\n      __typename\n      text\n      image\n      topImage\n    }\n  }\n  explanation\n}\n\nfragment MarkedQuestionPart on QuizQuestion {\n  __typename\n  ... on MultipleChoiceQuestion {\n    options {\n      explanation\n      explanationImage\n      __typename\n    }\n    correctOptionIndex\n    __typename\n  }\n  ... on MultiMultipleChoiceQuestion {\n    options {\n      explanation\n      explanationImage\n      correct\n      __typename\n    }\n    __typename\n  }\n  ... on DrawQuestion {\n    modelAnswer\n    __typename\n  }\n  ... on OpenEndedQuestion {\n    modelAnswer\n    __typename\n  }\n}"
+    };
+    apiFetch(auth, body);
+}
+
+ function completeVideo(auth, video) {
     console.log("# completeVideo");
     const id = video.id;
     const timeSpent = 73.31; // random
@@ -95,6 +109,10 @@ function completeVideo(auth, video) {
         },
         "query": "mutation CompleteVideoLesson($lessonId: ID!, $timeSpent: Decimal!, $percentWatched: Decimal!) {\n  completeVideoLesson(\n    lessonId: $lessonId\n    timeSpent: $timeSpent\n    percentWatched: $percentWatched\n  ) {\n    id\n    timeSpent\n    __typename\n  }\n}"
     };
+
+    for (question of video.inVideoQuizQuestions) {
+        completeInVideoQuestion(auth, question);
+    }
     apiFetch(auth, body);
 }
 
