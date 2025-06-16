@@ -30,6 +30,22 @@ are the same `id` used in `Complete` requests:
 
 ## Headers
 
-`authorization` seems constant throughout the session.
+The `authorization` header can be found by the `auth-token` cookie, unique to every session.
 
-The `Cookie`, I'm not sure.
+`content-type` is usually `application/json` for API calls.
+
+Most other headers can be copied with `credentials: "include"`.
+
+## Generic API template
+
+```js
+fetch("https://web.uplearn.co.uk/api/", {
+    method: "POST",
+    headers: {
+        "content-type": "application/json",
+        "authorization": `Bearer ${auth}`  // auth-token
+    },
+    credentials: "include",
+    body: JSON.stringify(body)  // request body
+});
+```
