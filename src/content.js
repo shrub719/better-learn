@@ -16,11 +16,15 @@ async function apiFetch(auth, body) {
     return response;
 }
 
+function getCookie(name) {
+  const match = document.cookie.match(new RegExp('(^|;\\s*)' + name + '=([^;]*)'));
+  return match ? decodeURIComponent(match[2]) : null;
+}
+
 async function getAuth() {
     console.log("# getAuth");
-    return "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ1cGxlYXJuLmNvLnVrIiwiZXhwIjoxNzUyNjc2MTgwLCJpYXQiOjE3NDk5OTc3ODAsImlzcyI6InVwbGVhcm4uY28udWsiLCJqdGkiOiIxNmY3NjBhNy1lYjQ4LTRhZDgtYTIyNi1mNjdkZDkxMjlmY2EiLCJuYmYiOjE3NDk5OTc3NzksInN1YiI6Ijk4ODk4NiIsInR5cCI6ImFjY2VzcyJ9._KFvEJ7bea6jR23sIH-hwoOMGOqUmIyvHW_jrGcVwk98W2HZj0glya_LRbOjzpLxmgPDekqJD5JymEyLnhTxRQ";
+    return getCookie("auth-token");
 };
-
 
 async function getSubsections(auth) {
     console.log("# getSubsections");
