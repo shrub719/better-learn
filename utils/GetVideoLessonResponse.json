@@ -1,0 +1,118 @@
+{
+    "data": {
+        "videoLesson": {
+            "__typename": "VideoLesson",
+            "duration": "PT2M57.600000S",
+            "extraContent": "<p><br></p>",
+            "id": "32231",
+            "inVideoQuizQuestions": [
+                {
+                    "__typename": "InVideoQuestion",
+                    "id": "107314",
+                    "postQuestionResumeTime": "PT2M31.790000S",
+                    "quizContent": {
+                        "__typename": "QuizContent",
+                        "id": "196785",
+                        "quizDefinition": {
+                            "__typename": "QuizDefinition",
+                            "questions": [
+                                {
+                                    "__typename": "MultipleInputQuestion",
+                                    "description": null,
+                                    "image": null,
+                                    "questionSegments": [
+                                        {
+                                            "__typename": "MultipleInputQuestionText",
+                                            "text": "If an object only experiences a restoring force, we call its motion a ",
+                                            "type": "MultipleInputQuestionText"
+                                        },
+                                        {
+                                            "__typename": "MultipleInputQuestionBlank",
+                                            "fieldIndex": 0,
+                                            "type": "MultipleInputQuestionBlank"
+                                        },
+                                        {
+                                            "__typename": "MultipleInputQuestionText",
+                                            "text": " oscillation.",
+                                            "type": "MultipleInputQuestionText"
+                                        }
+                                    ],
+                                    "topImage": null
+                                }
+                            ]
+                        },
+                        "stem": null
+                    },
+                    "triggerTime": "PT2M31.790000S"
+                },
+                {
+                    "__typename": "InVideoQuestion",
+                    "id": "107315",
+                    "postQuestionResumeTime": "PT2M51.130000S",
+                    "quizContent": {
+                        "__typename": "QuizContent",
+                        "id": "196786",
+                        "quizDefinition": {
+                            "__typename": "QuizDefinition",
+                            "questions": [
+                                {
+                                    "__typename": "MultipleInputQuestion",
+                                    "description": null,
+                                    "image": null,
+                                    "questionSegments": [
+                                        {
+                                            "__typename": "MultipleInputQuestionText",
+                                            "text": "Any freely oscillating system oscillates at a constant frequency. We call this the system’s ",
+                                            "type": "MultipleInputQuestionText"
+                                        },
+                                        {
+                                            "__typename": "MultipleInputQuestionBlank",
+                                            "fieldIndex": 0,
+                                            "type": "MultipleInputQuestionBlank"
+                                        },
+                                        {
+                                            "__typename": "MultipleInputQuestionText",
+                                            "text": " frequency.",
+                                            "type": "MultipleInputQuestionText"
+                                        }
+                                    ],
+                                    "topImage": null
+                                }
+                            ]
+                        },
+                        "stem": null
+                    },
+                    "triggerTime": "PT2M51.130000S"
+                }
+            ],
+            "length": "177.6",
+            "module": {
+                "__typename": "Module",
+                "examBoardSubject": {
+                    "__typename": "ExamBoardSubject",
+                    "subject": {
+                        "__typename": "Subject",
+                        "qualification": {
+                            "__typename": "Qualification",
+                            "uniqueCode": "a-level"
+                        }
+                    }
+                },
+                "id": "73",
+                "title": "Papers 1 & 2",
+                "uniqueCode": "physics-aqa-13-papers-1-2"
+            },
+            "preVideoQuestions": [],
+            "skipRecapStartTime": "PT0S",
+            "subsection": {
+                "__typename": "Subsection",
+                "id": "5161",
+                "name": "Resonance",
+                "uniqueCode": "resonance"
+            },
+            "title": "Free Oscillations",
+            "uniqueCode": "free-oscillations-video",
+            "wistiaId": "rhgruvd9qa"
+        }
+    }
+}

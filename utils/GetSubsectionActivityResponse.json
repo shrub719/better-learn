@@ -1,0 +1,56 @@
+{
+    "data": {
+        "subsection": {
+            "__typename": "Subsection",
+            "activity": {
+                "__typename": "VideoLesson",
+                "eligibleForV2": true,
+                "id": "32231",
+                "uniqueCode": "free-oscillations-video"
+            },
+            "id": "5161",
+            "module": {
+                "__typename": "Module",
+                "currentUserChildEnrolment": null,
+                "currentUserEnrolment": {
+                    "__typename": "Enrolment",
+                    "id": "3077939",
+                    "isActive": true,
+                    "isTrial": false,
+                    "purchases": [
+                        {
+                            "__typename": "Purchase",
+                            "id": "2208009",
+                            "purchasePackage": {
+                                "__typename": "PurchasePackage",
+                                "id": "97",
+                                "uniqueCode": "year-13-a-level-aqa-physics"
+                            },
+                            "purchasedAt": "2025-04-23T08:12:43Z"
+                        }
+                    ]
+                },
+                "examBoardSubject": {
+                    "__typename": "ExamBoardSubject",
+                    "board": "AQA",
+                    "boardName": "AQA",
+                    "subject": "Physics",
+                    "subjectName": "Physics",
+                    "subjectObject": {
+                        "__typename": "Subject",
+                        "qualification": {
+                            "__typename": "Qualification",
+                            "uniqueCode": "a-level"
+                        }
+                    }
+                },
+                "id": "73",
+                "subtitle": "Year 12 & 13",
+                "title": "Papers 1 & 2",
+                "uniqueCode": "physics-aqa-13-papers-1-2"
+            },
+            "name": "Resonance",
+            "uniqueCode": "resonance"
+        }
+    }
+}

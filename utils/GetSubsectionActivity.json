@@ -1,0 +1,9 @@
+{
+    "operationName": "GetSubsectionActivity",
+    "variables": {
+        "moduleUniqueCode": "physics-aqa-13-papers-1-2",
+        "subsectionUniqueCode": "resonance",
+        "activityUniqueCode": "free-oscillations-video"
+    },
+    "query": "query GetSubsectionActivity($moduleUniqueCode: String!, $subsectionUniqueCode: String!, $activityUniqueCode: String) {\n  subsection(\n    filter: {uniqueCode: $subsectionUniqueCode, moduleUniqueCode: $moduleUniqueCode}\n  ) {\n    id\n    name\n    uniqueCode\n    module {\n      id\n      title\n      subtitle\n      uniqueCode\n      currentUserEnrolment {\n        id\n        isTrial\n        isActive\n        purchases(filter: {isCurrent: true}) {\n          id\n          purchasedAt\n          purchasePackage {\n            id\n            uniqueCode\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      currentUserChildEnrolment {\n        id\n        isTrial\n        isActive\n        purchases(filter: {isCurrent: true}) {\n          id\n          purchasedAt\n          purchasePackage {\n            id\n            uniqueCode\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      examBoardSubject {\n        board\n        boardName\n        subject\n        subjectName\n        subjectObject {\n          qualification {\n            uniqueCode\n            __typename\n          }\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    activity(uniqueCode: $activityUniqueCode) {\n      id\n      __typename\n      uniqueCode\n      ... on ArticleLesson {\n        title\n        extraContent\n        __typename\n      }\n      ... on VideoLesson {\n        eligibleForV2\n        __typename\n      }\n      ... on ProgressQuizGroup {\n        eligibleForV2\n        __typename\n      }\n    }\n    __typename\n  }\n}"
+}
