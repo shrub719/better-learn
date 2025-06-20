@@ -1,0 +1,114 @@
+{
+    "data": {
+        "videoLesson": {
+            "__typename": "VideoLesson",
+            "duration": "PT1M50.950000S",
+            "extraContent": "<p><br></p>",
+            "id": "32232",
+            "inVideoQuizQuestions": [
+                {
+                    "__typename": "InVideoQuestion",
+                    "id": "107316",
+                    "postQuestionResumeTime": "PT1M29.07000S",
+                    "quizContent": {
+                        "__typename": "QuizContent",
+                        "id": "198559",
+                        "quizDefinition": {
+                            "__typename": "QuizDefinition",
+                            "questions": [
+                                {
+                                    "__typename": "MultipleChoiceQuestion",
+                                    "description": null,
+                                    "image": "https://app.uplearn.co.uk/imgstore/Picture97MQugebkAqT.png",
+                                    "options": [
+                                        {
+                                            "__typename": "MultipleChoiceQuestionOption",
+                                            "image": null,
+                                            "text": "A child being pushed on a swing."
+                                        },
+                                        {
+                                            "__typename": "MultipleChoiceQuestionOption",
+                                            "image": null,
+                                            "text": "A child on a swing oscillating freely."
+                                        }
+                                    ],
+                                    "question": "Which of these is a forced oscillation?",
+                                    "topImage": null
+                                }
+                            ]
+                        },
+                        "stem": null
+                    },
+                    "triggerTime": "PT1M29.07000S"
+                },
+                {
+                    "__typename": "InVideoQuestion",
+                    "id": "107317",
+                    "postQuestionResumeTime": "PT1M42.800000S",
+                    "quizContent": {
+                        "__typename": "QuizContent",
+                        "id": "198560",
+                        "quizDefinition": {
+                            "__typename": "QuizDefinition",
+                            "questions": [
+                                {
+                                    "__typename": "MultipleInputQuestion",
+                                    "description": null,
+                                    "image": null,
+                                    "questionSegments": [
+                                        {
+                                            "__typename": "MultipleInputQuestionText",
+                                            "text": "If an external driving force makes a system oscillate, we call it a ",
+                                            "type": "MultipleInputQuestionText"
+                                        },
+                                        {
+                                            "__typename": "MultipleInputQuestionBlank",
+                                            "fieldIndex": 0,
+                                            "type": "MultipleInputQuestionBlank"
+                                        },
+                                        {
+                                            "__typename": "MultipleInputQuestionText",
+                                            "text": " oscillation.",
+                                            "type": "MultipleInputQuestionText"
+                                        }
+                                    ],
+                                    "topImage": null
+                                }
+                            ]
+                        },
+                        "stem": null
+                    },
+                    "triggerTime": "PT1M42.800000S"
+                }
+            ],
+            "length": "110.95",
+            "module": {
+                "__typename": "Module",
+                "examBoardSubject": {
+                    "__typename": "ExamBoardSubject",
+                    "subject": {
+                        "__typename": "Subject",
+                        "qualification": {
+                            "__typename": "Qualification",
+                            "uniqueCode": "a-level"
+                        }
+                    }
+                },
+                "id": "73",
+                "title": "Papers 1 & 2",
+                "uniqueCode": "physics-aqa-13-papers-1-2"
+            },
+            "preVideoQuestions": [],
+            "skipRecapStartTime": "PT0S",
+            "subsection": {
+                "__typename": "Subsection",
+                "id": "5161",
+                "name": "Resonance",
+                "uniqueCode": "resonance"
+            },
+            "title": "Forced Oscillations",
+            "uniqueCode": "forced-oscillations-video",
+            "wistiaId": "e9r2mivqju"
+        }
+    }
+}

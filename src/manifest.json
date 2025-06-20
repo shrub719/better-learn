@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Up Learn Complete",
+  "description": "Automatically complete Up Learn homework assignments.",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-64.png",
+    "128": "icons/icon-128.png",
+    "256": "icons/icon-256.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "uplearn-complete@shrub719.com"
+    }
+  },
+
+  "content_scripts": [
+    {
+        "matches": ["*://web.uplearn.co.uk/*"],
+        "js": ["content.js"]
+    }
+  ],
+
+  "host_permissions": [
+    "*://web.uplearn.co.uk/*"
+  ]
+}
