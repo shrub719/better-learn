@@ -20,7 +20,7 @@ This extension will probably never make it onto the Chrome Web Store due to bein
 1. Click the gear icon next to Manage Your Extensions > Debug Add-ons
 1. Click Load Temporary Add-on and select `manifest.json` in the `uplearn-complete` folder on your computer
 
-Unfortunately, this extension does not support Firefox's `Install Add-on From File` yet.
+Unfortunately, this extension does not support Firefox's Install Add-on From File yet.
 
 ## Usage
 
