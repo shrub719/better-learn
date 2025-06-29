@@ -134,7 +134,7 @@ async function completeInVideoQuestion(auth, question) {
     const questions = lesson.data.videoLesson.inVideoQuizQuestions;
 
     for (const question of questions) {
-        await completeInVideoQuestion(auth, question);
+        // await completeInVideoQuestion(auth, question);
     }
 
     const timeSpent = 73.31; // random
@@ -171,4 +171,4 @@ async function completeAssignment() {
 }
 
 console.log("# hey im here!")
-completeAssignment();
+completeAssignment();  // wait for message from content
