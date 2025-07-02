@@ -1,3 +1,5 @@
+// ===== COMPLETE =====
+
 async function apiFetch(auth, body) {
     console.log("# apiFetch");
     console.log(body);
@@ -170,5 +172,16 @@ async function completeAssignment() {
     }
 }
 
+// ===== SPEED =====
+
+function setVideoSpeed(speed) {
+    console.log("# setVideoSpeed");
+
+    document.querySelector("video").playbackRate = speed;
+}
+
+// ===== LISTENERS =====
+
 console.log("# hey im here!")
 completeAssignment();  // wait for message from content
+setVideoSpeed(3.5);
