@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Better Learn",
-  "description": "Automatically complete Up Learn homework assignments.",
+  "description": "Companion extension for Up Learn.",
   "version": "1.0.0",
   "icons": {
     "16": "icons/icon-16.png",

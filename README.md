@@ -1,8 +1,14 @@
 # Better Learn
 
-A browser extension for automatically completing Up Learn homework.
+Companion extension for Up Learn.
 
-Currently a work in progress.
+## Features
+
+- **Complete assignment:** checks off all non-video activities in a subsection.
+- **Skip video:** skips the content of the current video and only displays questions.
+- **Video speed:** adjust video speed past normal limits.  
+  *Past 3.5x speed questions will not be triggered so video lessons will not be checked off.*
+
 
 ## Installation
 
@@ -21,7 +27,3 @@ This extension will probably never make it onto the Chrome Web Store due to bein
 1. Click Load Temporary Add-on and select `manifest.json` in the `better-learn` folder on your computer
 
 Unfortunately, this extension does not support Firefox's Install Add-on From File yet.
-
-## Usage
-
-Navigate to an assignment/subsection page and refresh the page. The extension will check off every non-video lesson automatically.
