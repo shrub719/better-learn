@@ -239,6 +239,7 @@ async function skipVideoLesson(url) {
     const auth = await getAuth();
     const lesson = await apiFetch(auth, getLessonBody);
     const questions = lesson.data.videoLesson.inVideoQuizQuestions;
+    const lessonEnd = durationToSeconds(lesson.data.videoLesson.duration);
 
     for (const question of questions) {
         timestamp = durationToSeconds(question.triggerTime);
@@ -246,6 +247,8 @@ async function skipVideoLesson(url) {
         await sleep(500);
         await waitForQuestion();
     }
+
+    skipToQuestion(lessonEnd);
 }
 
 function checkVideoLesson() {
