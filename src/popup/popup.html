@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uplearn Complete</title>
+        <link rel="stylesheet" href="popup.css">
+    </head>
+    <body>
+        <div id="container">
+            <div class="c" id="c1">
+                <input type="button" onclick="completeAssignment();" value="Complete subsection" name="complete" id="complete">
+            </div>
+
+            <div class="c" id="c2">
+                <input type="checkbox" onlick="toggleVideoSkip();" name="videoSkip" id="videoSkip">
+                <label for="videoSkip">Skip videos</label>
+            </div>
+
+            <div class="c" id="c3">
+                <input type="range" value="1" min="0" max="3.5" step="0.1" name="speed" id="speed"><br>
+                <label for="speed" id="speedLabel">Video speed: 1.0x</label>
+            </div>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+</html>

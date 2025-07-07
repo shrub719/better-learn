@@ -251,3 +251,7 @@ console.log("# hey im here!")
 setTimeout(checkVideoLesson, 5000);  // how to wait for video to load....
 
 completeAssignment();  // wait for message from content
+
+browser.runtime.onMessage.addListener((msg) => {
+    console.log(msg);
+});

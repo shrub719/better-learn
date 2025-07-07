@@ -1,0 +1,17 @@
+body {
+    font: 15px Arial, sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+.c {
+    margin: 15px 10px 15px 10px;
+    text-align: center;
+}
+
+.c > * {
+    margin: auto;
+}
