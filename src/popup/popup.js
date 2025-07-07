@@ -16,8 +16,8 @@ complete.addEventListener("click", (e) => {
 
 // ===== SPEED =====
 
-speed = document.querySelector("#speed");
-speedLabel = document.querySelector("#speedLabel");
+const speed = document.querySelector("#speed");
+const speedLabel = document.querySelector("#speedLabel");
 
 speed.addEventListener("input", (e) => {
     speedLabel.textContent = `Video speed: ${e.target.value}x`;
@@ -29,7 +29,7 @@ speed.addEventListener("input", (e) => {
 
 // ===== VIDEO LESSONS ======
 
-videoSkip = document.querySelector("#videoSkip");
+const videoSkip = document.querySelector("#videoSkip");
 
 videoSkip.addEventListener("click", (e) => {
     sendMessage({
