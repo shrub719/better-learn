@@ -232,7 +232,7 @@ async function skipVideoLesson(url) {
     for (question of questions) {
         timestamp = durationToSeconds(question.triggerTime);
         skipToQuestion(timestamp);
-        await sleep(5000);  // wait for question to be finished
+        await sleep(5000);  // wait for next to be clicked in popup
     }
 }
 
@@ -248,10 +248,17 @@ function checkVideoLesson() {
 
 console.log("# hey im here!")
 
-setTimeout(checkVideoLesson, 5000);  // how to wait for video to load....
-
-completeAssignment();  // wait for message from content
-
 browser.runtime.onMessage.addListener((msg) => {
     console.log(msg);
+    switch (msg.type) {
+        case "speed":
+            setVideoSpeed(msg.value);
+            break;
+        case "complete":
+            completeAssignment();
+            break;
+        case "videoSkip":
+            // uhm
+            break;
+    }
 });
