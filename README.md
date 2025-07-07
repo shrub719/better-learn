@@ -7,7 +7,7 @@ Companion extension for Up Learn.
 - **Complete assignment:** checks off all non-video activities in a subsection.
 - **Skip video:** skips the content of the current video and only displays questions.
 - **Video speed:** adjust video speed past normal limits.  
-  *Past 3.5x speed questions will not be triggered so video lessons will not be checked off.*
+  *Past 3.5x speed, questions will not be triggered so video lessons will not be checked off.*
 
 
 ## Installation
