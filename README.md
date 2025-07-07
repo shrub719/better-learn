@@ -1,6 +1,6 @@
 # Better Learn
 
-Companion extension for Up Learn.
+Companion extension for [Up Learn](https://uplearn.co.uk/).
 
 ## Features
 
