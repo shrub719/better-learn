@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Up Learn Complete",
+  "name": "Better Learn",
   "description": "Automatically complete Up Learn homework assignments.",
   "version": "1.0.0",
   "icons": {
@@ -12,7 +12,7 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "uplearn-complete@shrub719.com"
+      "id": "better-learn@shrub719.com"
     }
   },
 
@@ -21,7 +21,7 @@
       "16": "icons/icon-16.png",
       "32": "icons/icon-32.png"
     },
-    "default_title": "Uplearn Complete",
+    "default_title": "Better Learn",
     "default_popup": "popup/popup.html"
   },
 

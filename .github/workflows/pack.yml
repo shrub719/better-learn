@@ -11,5 +11,5 @@ jobs:
       - name: Upload zip
         uses: actions/upload-artifact@v4
         with:
-          name: uplearn-complete
+          name: better-learn
           path: src
