@@ -31,9 +31,8 @@ speed.addEventListener("input", (e) => {
 
 videoSkip = document.querySelector("#videoSkip");
 
-videoSkip.addEventListener("input", (e) => {
+videoSkip.addEventListener("click", (e) => {
     sendMessage({
         type: "videoSkip",
-        value: e.target.checked
     });
 });

@@ -186,6 +186,17 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+async function waitForQuestion() {
+    while (true) { 
+        const video = document.querySelector("media-controller");
+        const { display } = window.getComputedStyle(video, null);
+        if (display !== "none") {
+            break;
+        }
+        await sleep(500);
+    }
+}
+
 function skipToQuestion(seconds) {
     console.log(`# skipping to ${seconds}`);
     document.querySelector("video").currentTime = seconds;
@@ -229,10 +240,11 @@ async function skipVideoLesson(url) {
     const lesson = await apiFetch(auth, getLessonBody);
     const questions = lesson.data.videoLesson.inVideoQuizQuestions;
 
-    for (question of questions) {
+    for (const question of questions) {
         timestamp = durationToSeconds(question.triggerTime);
         skipToQuestion(timestamp);
-        await sleep(5000);  // wait for next to be clicked in popup
+        await sleep(500);
+        await waitForQuestion();
     }
 }
 
@@ -258,7 +270,7 @@ browser.runtime.onMessage.addListener((msg) => {
             completeAssignment();
             break;
         case "videoSkip":
-            // uhm
+            checkVideoLesson();
             break;
     }
 });
