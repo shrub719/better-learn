@@ -246,7 +246,7 @@ async function skipVideoLesson(url) {
     for (const question of questions) {
         timestamp = durationToSeconds(question.triggerTime);
         skipToQuestion(timestamp);
-        await sleep(500);
+        await sleep(2000);
         await waitForQuestion();
     }
 
