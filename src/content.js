@@ -218,6 +218,7 @@ function durationToSeconds(isoDuration) {
 async function skipVideoLesson(url) {
     console.log("# skipVideoLesson");
     setVideoSpeed(0);
+    skipToQuestion(0);
 
     const path = new URL(url).pathname.split('/').filter(Boolean);
     const [moduleUniqueCode, subsectionUniqueCode, videoUniqueCode] = path.slice(-3);
