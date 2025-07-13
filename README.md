@@ -13,7 +13,7 @@ Companion extension for [Up Learn](https://uplearn.co.uk/).
 ## Installation
 
 ### Using Chrome Load Unpacked
-1. Download `better-learn.zip` from the latest release and extract
+1. Download `better-learn.zip` from the [latest release](https://github.com/shrub719/better-learn/releases/latest) and extract
 1. In Chrome, click the three dots at the top right > Extensions > Manage Extensions
 1. Turn on Developer Mode
 1. Click Load Unpacked and select the `better-learn` folder on your computer
@@ -21,7 +21,7 @@ Companion extension for [Up Learn](https://uplearn.co.uk/).
 This extension will probably never make it onto the Chrome Web Store due to being against policy.
 
 ### Using Firefox Temporary Add-Ons
-1. Download `better-learn.zip` from the latest release and extract
+1. Download `better-learn.zip` from the [latest release](https://github.com/shrub719/better-learn/releases/latest) and extract
 1. In Firefox, click on the menu in the top right > Add-ons and themes
 1. Click the gear icon next to Manage Your Extensions > Debug Add-ons
 1. Click Load Temporary Add-on and select `manifest.json` in the `better-learn` folder on your computer
