@@ -112,19 +112,6 @@ async function skipVideoLesson() {
     skipToQuestion(lessonEnd);
 }
 
-// ===== SUMMARY QUIZ =====
-
-function diagnosticQuiz() {
-    console.log("# diagnosticQuiz");
-    const url = window.location.href;
-    const path = new URL(url).pathname.split('/').filter(Boolean);
-    const [check, moduleUniqueCode, subsectionUniqueCode] = path.slice(-3);
-
-    if (check != "learn") return;
-
-    window.location.href = url + "/diagnostic-quiz";
-}
-
 // ===== LISTENERS =====
 
 console.log("# hey im here!")
@@ -137,9 +124,6 @@ browser.runtime.onMessage.addListener((msg) => {
             break;
         case "videoSkip":
             skipVideoLesson()
-            break;
-        case "diagnosticQuiz":
-            diagnosticQuiz();
             break;
     }
 });
