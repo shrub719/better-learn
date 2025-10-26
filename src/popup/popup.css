@@ -64,3 +64,7 @@ p {
     font-size: 12px;
     font-style: italic;
 }
+
+.speedHigh {
+    display: block !important;
+}
