@@ -1,7 +1,21 @@
+:root {
+    --up-green: rgb(54, 169, 63);
+    --almost-black: rgb(51, 51, 51);
+    --almost-white: rgb(242, 242, 242);
+    --grey: rgb(228, 228, 228);
+    --light-green: rgb(106, 160, 110);
+}
+
 body {
-    border: 5px solid rgb(54, 169, 63);
+    width: 200px;
+    border: 5px solid var(--up-green);
     margin: 0;
     padding: 5px;
+    color: var(--almost-black);
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5;
 }
 
 #container {
@@ -19,20 +33,34 @@ body {
 }
 
 input[type="button"] {
-    background-color: rgb(242, 242, 242);
+    background-color: var(--almost-white);
+    box-shadow: 0 2px 0 0 var(--light-green);
     padding: 10px;
     border-radius: 5px;
     border: none;
 }
 
-input:hover {
-    cursor: pointer;
+input {
+    accent-color: var(--up-green);
 }
 
-input, label {
-    color: rgb(51, 51, 51);
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.5;
+input:hover {
+    cursor: pointer;
+    background-color: var(--grey);
+}
+
+input:active[type="button"] {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+p {
+    width: 100%;
+    font-weight: 300;
+}
+
+#speedWarning {
+    display: none;
+    font-size: 12px;
+    font-style: italic;
 }
