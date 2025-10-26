@@ -271,9 +271,6 @@ browser.runtime.onMessage.addListener((msg) => {
         case "speed":
             setVideoSpeed(msg.value);
             break;
-        case "complete":
-            completeAssignment();
-            break;
         case "videoSkip":
             checkVideoLesson();
             break;

@@ -4,15 +4,6 @@ function sendMessage(msg) {
     });
 }
 
-// ===== COMPLETE =====
-
-complete = document.querySelector("#complete");
-
-complete.addEventListener("click", (e) => {
-    sendMessage({
-        type: "complete"
-    });
-});
 
 // ===== SPEED =====
 
@@ -27,7 +18,7 @@ speed.addEventListener("input", (e) => {
     });
 });
 
-// ===== VIDEO LESSONS ======
+// ===== VIDEO LESSONS =====
 
 const videoSkip = document.querySelector("#videoSkip");
 
