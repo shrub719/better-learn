@@ -27,3 +27,13 @@ videoSkip.addEventListener("click", (e) => {
         type: "videoSkip",
     });
 });
+
+// ===== SUMMARY QUIZ =====
+
+const diagnosticQuiz = document.querySelector("#diagnosticQuiz");
+
+diagnosticQuiz.addEventListener("click", (e) => {
+    sendMessage({
+        type: "diagnosticQuiz",
+    });
+});
