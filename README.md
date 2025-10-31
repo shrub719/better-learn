@@ -4,7 +4,6 @@ Companion extension for [Up Learn](https://uplearn.co.uk/) with a few utility/QO
 
 ## Features
 
-- **Summary quiz:** begins the summary quiz even if it has already been taken.
 - **Skip video:** skips the content of the current video and only displays questions.
 - **Video speed:** adjust video speed past normal limits.  
   *Above 3.5x speed, in-video questions will not be triggered.*
