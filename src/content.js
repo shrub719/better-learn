@@ -74,14 +74,15 @@ async function skipVideoLesson() {
     console.log("# skipVideoLesson");
     const url = window.location.href;
 
-    if (url.slice(-5) != "video") return;
-    
     setVideoSpeed(0);
     skipToQuestion(0);
 
     const path = new URL(url).pathname.split('/').filter(Boolean);
     const [moduleUniqueCode, subsectionUniqueCode, videoUniqueCode] = path.slice(-3);
     console.log(`# ${moduleUniqueCode}, ${subsectionUniqueCode}, ${videoUniqueCode}`);
+
+    if (videoUniqueCode.slice(-5) != "video") return;
+
     const getLessonBody = {
         "operationName": "GetVideoLesson",
         "variables": {
