@@ -111,6 +111,7 @@ async function skipVideoLesson() {
     }
 
     skipToQuestion(lessonEnd);
+    setVideoSpeed(1);
 }
 
 // ===== LISTENERS =====
