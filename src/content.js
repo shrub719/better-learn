@@ -1,4 +1,4 @@
-// ===== COMPLETE =====
+// ===== API =====
 
 async function apiFetch(auth, body) {
     console.log("# apiFetch");
@@ -27,6 +27,7 @@ async function getAuth() {
     return getCookie("auth-token");
 };
 
+
 // ===== SPEED =====
 
 function setVideoSpeed(speed) {
@@ -34,6 +35,7 @@ function setVideoSpeed(speed) {
 
     document.querySelector("video").playbackRate = speed;
 }
+
 
 // ===== VIDEO LESSONS =====
 
@@ -114,6 +116,7 @@ async function skipVideoLesson() {
     setVideoSpeed(1);
 }
 
+
 // ===== LISTENERS =====
 
 console.log("# hey im here!")
@@ -129,3 +132,4 @@ browser.runtime.onMessage.addListener((msg) => {
             break;
     }
 });
+
