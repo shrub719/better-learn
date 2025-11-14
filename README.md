@@ -26,3 +26,8 @@ This extension will probably never make it onto the Chrome Web Store due to bein
 1. Click Load Temporary Add-on and select `manifest.json` in the `better-learn` folder on your computer
 
 Unfortunately, this extension does not support Firefox's Install Add-on From File yet.
+
+## Disclaimer
+
+This extension is not affiliated with or endorsed by Up Learn Limited.  
+Up Learn is a registered trademark of Up Learn Limited.
