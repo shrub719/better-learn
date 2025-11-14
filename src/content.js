@@ -133,3 +133,48 @@ browser.runtime.onMessage.addListener((msg) => {
     }
 });
 
+// ===== FULLSCREEN =====
+
+function injectInline(code) {
+  const script = document.createElement('script');
+  script.textContent = code;
+  (document.head || document.documentElement).appendChild(script);
+  script.remove();
+}
+
+injectInline(`
+
+// ===== PATCHES =====
+
+function patchPromises() {
+    console.log("# patchPromises");
+
+    const fakePromise = Promise.resolve();
+
+    Element.prototype.requestFullscreen = function() {
+        return fakePromise;
+    };
+
+    Document.prototype.requestFullscreen = function() {
+        return fakePromise;
+    };
+}
+
+function patchProperties() {
+    console.log("# patchProperties");
+
+    Object.defineProperty(document, "fullscreenElement", {
+        get: () => document.documentElement
+    });
+
+    Object.defineProperty(document, "fullscreenEnabled", {
+        get: () => true
+    });
+}
+
+
+// ===== APPLICATION =====
+
+patchPromises();
+
+`);
