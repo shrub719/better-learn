@@ -16,7 +16,8 @@
       "id": "better-learn@shrub719.com",
       "data_collection_permissions": {
         "required": ["none"]
-      }
+      },
+      "update_url": "https://shrub719.github.io/better-learn/update.json"
     }
   },
 
