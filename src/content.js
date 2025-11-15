@@ -1,8 +1,15 @@
+// ===== UTILS =====
+
+function debug(info) {
+    console.log("better-learn:", info);
+}
+
+
 // ===== API =====
 
 async function apiFetch(auth, body) {
-    console.log("# apiFetch");
-    console.log(body);
+    debug("apiFetch");
+    debug({ body })
     let response = await fetch("https://web.uplearn.co.uk/api/", {
         method: "POST",
         headers: {
@@ -13,17 +20,17 @@ async function apiFetch(auth, body) {
         body: JSON.stringify(body)
     });
     response = await response.json();
-    console.log(response); 
+    debug({ response });
     return response;
 }
 
 function getCookie(name) {
-  const match = document.cookie.match(new RegExp('(^|;\\s*)' + name + '=([^;]*)'));
-  return match ? decodeURIComponent(match[2]) : null;
+    const match = document.cookie.match(new RegExp('(^|;\\s*)' + name + '=([^;]*)'));
+    return match ? decodeURIComponent(match[2]) : null;
 }
 
 async function getAuth() {
-    console.log("# getAuth");
+    debug("getAuth");
     return getCookie("auth-token");
 };
 
@@ -31,8 +38,7 @@ async function getAuth() {
 // ===== SPEED =====
 
 function setVideoSpeed(speed) {
-    console.log(`# setVideoSpeed ${speed}`);
-
+    debug(`setVideoSpeed ${speed}`);
     document.querySelector("video").playbackRate = speed;
 }
 
@@ -55,7 +61,7 @@ async function waitForQuestion() {
 }
 
 function skipToQuestion(seconds) {
-    console.log(`# skipping to ${seconds}`);
+    debug(`skipping to ${seconds} seconds`);
     document.querySelector("video").currentTime = seconds;
 }
 
@@ -73,7 +79,7 @@ function durationToSeconds(isoDuration) {
   }
 
 async function skipVideoLesson() {
-    console.log("# skipVideoLesson");
+    debug("skipVideoLesson");
     const url = window.location.href;
 
     setVideoSpeed(0);
@@ -81,7 +87,7 @@ async function skipVideoLesson() {
 
     const path = new URL(url).pathname.split('/').filter(Boolean);
     const [moduleUniqueCode, subsectionUniqueCode, videoUniqueCode] = path.slice(-3);
-    console.log(`# ${moduleUniqueCode}, ${subsectionUniqueCode}, ${videoUniqueCode}`);
+    debug({ moduleUniqueCode, subsectionUniqueCode, videoUniqueCode });
 
     if (videoUniqueCode.slice(-5) != "video") return;
 
@@ -119,10 +125,10 @@ async function skipVideoLesson() {
 
 // ===== LISTENERS =====
 
-console.log("# hey im here!")
+debug("hello world!");
 
 browser.runtime.onMessage.addListener((msg) => {
-    console.log(msg);
+    debug(msg);
     switch (msg.type) {
         case "speed":
             setVideoSpeed(msg.value);
@@ -136,10 +142,12 @@ browser.runtime.onMessage.addListener((msg) => {
 // ===== FULLSCREEN =====
 
 function injectInline(code) {
-  const script = document.createElement('script');
-  script.textContent = code;
-  (document.head || document.documentElement).appendChild(script);
-  script.remove();
+    debug("injectInline");
+    const script = document.createElement('script');
+    script.textContent = code;
+    (document.head || document.documentElement).appendChild(script);
+    script.remove();
+    debug("injected script");
 }
 
 injectInline(`
@@ -147,7 +155,7 @@ injectInline(`
 // ===== PATCHES =====
 
 function patchPromises() {
-    console.log("# patchPromises");
+    console.log("better-learn: patchPromises");
 
     const fakePromise = Promise.resolve();
 
@@ -175,6 +183,7 @@ function patchProperties() {
 
 // ===== APPLICATION =====
 
+console.log("better-learn: hello bigger world!");
 patchPromises();
 
 `);
