@@ -2,7 +2,16 @@ name: Deploy update.json to pages
 
 on:
   push:
-    branches: ["main"]
+    paths:
+      - 'update/**'
+    branches:
+      - main
+  pull_request:
+    paths:
+      - 'update/**'
+    branches:
+      - main
+
 
   workflow_dispatch:
 
@@ -29,7 +38,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'update'
+          path: './update'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
