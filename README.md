@@ -1,4 +1,11 @@
-# Better Learn
+<h1 align="center">
+    <img src="src/icons/icon-128.png" alt="Better Learn icon" height="100px"> 
+    <br />
+    Better Learn
+    <br />
+    <a href="https://github.com/shrub719/better-learn/releases/download/v1.3.1/better-learn.xpi"><img alt="Install for Firefox" src="https://img.shields.io/badge/Firefox-Install-orange"></a>
+    <img alt="Install for Chrome" src="https://img.shields.io/badge/Chrome-Coming_Soon-lightgrey">    
+</h1>
 
 Companion extension for [Up Learn](https://uplearn.co.uk/) with a few utility/QOL features.
 
