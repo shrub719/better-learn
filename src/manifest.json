@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Better Learn",
   "description": "Companion extension for Up Learn.",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "icons": {
     "16": "icons/icon-16.png",
     "32": "icons/icon-32.png",
@@ -33,7 +33,7 @@
   "content_scripts": [
     {
         "matches": ["*://web.uplearn.co.uk/*"],
-        "js": ["content.js"]
+        "js": ["browser-polyfill.min.js", "content.js"]
     }
   ],
 
