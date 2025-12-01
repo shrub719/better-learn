@@ -5,6 +5,10 @@
         {
           "version": "1.3.1",
           "update_link": "https://github.com/shrub719/better-learn/releases/download/v1.3.1/better-learn.xpi"
+        },
+        {
+          "version": "1.3.2",
+          "update_link": "https://github.com/shrub719/better-learn/releases/download/v1.3.2/better-learn.xpi"
         }
       ]
     }
