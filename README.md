@@ -12,6 +12,8 @@ Companion extension for [Up Learn](https://uplearn.co.uk/) with a few utility/QO
 ## Features
 
 - **Skip video:** skip the content of the current video and only display questions
+- **Log time:** "complete" a video with a given time, in minutes
+  *Counts as time spent studying*
 - **Video speed:** adjust video speed past normal limits  
   *Above 3.5x speed, in-video questions will not be triggered*  
 - **Disable fullscreen:** automatically removes fullscreen warnings   
