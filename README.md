@@ -4,7 +4,7 @@
     Better Learn
     <br />
     <a href="https://github.com/shrub719/better-learn/releases/latest/download/better-learn.xpi"><img alt="Install for Firefox" src="https://img.shields.io/badge/Firefox-Install-orange"></a>
-    <a href="https://github.com/shrub719/better-learn/releases/latest/download/better-learn.crx"><img alt="Install for Chrome" src="https://img.shields.io/badge/Chrome-Coming_Soon-lightgrey"></a>
+    <a href="https://github.com/shrub719/better-learn/releases/latest/download/better-learn.crx"><img alt="Install for Chrome" src="https://img.shields.io/badge/Chrome-Unavailable-lightgrey"></a>
 </h1>
 
 Companion extension for [Up Learn](https://uplearn.co.uk/) with a few utility/QOL features.
@@ -21,8 +21,8 @@ Companion extension for [Up Learn](https://uplearn.co.uk/) with a few utility/QO
 
 ## Installation
 
-### Firefox
-1. In Firefox, download `better-learn.xpi` from the [latest release](https://github.com/shrub719/better-learn/releases/latest)
+### Firefox - [`Install`](https://github.com/shrub719/better-learn/releases/latest/download/better-learn.xpi)
+1. In Firefox, click **Install** above or download `better-learn.xpi` from the [latest release](https://github.com/shrub719/better-learn/releases/latest)
 1. Firefox will ask you to allow github.com to install an add-on: click **Continue to Installation**
 1. Click **Add**
 1. To use **Disable fullscreen**, right-click the extension icon while on [web.uplearn.co.uk](https://web.uplearn.co.uk/) and select **Always Allow on web.uplearn.co.uk** <!-- TODO: do this on install? -->
