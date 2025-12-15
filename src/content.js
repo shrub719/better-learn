@@ -4,9 +4,10 @@ function debug(info) {
     console.log("better-learn:", info);
 }
 
+const GET_VIDEO_LESSON_QUERY = "query GetVideoLesson($uniqueCode: String!, $subsectionUniqueCode: String!, $moduleUniqueCode: String!, $inVideoQuestionFilter: InVideoQuestionFilter, $inVideoQuestionOrder: [InVideoQuestionOrdering]) {  videoLesson(    filter: {uniqueCode: $uniqueCode, subsectionUniqueCode: $subsectionUniqueCode, moduleUniqueCode: $moduleUniqueCode}  ) {    id    module {      id      uniqueCode      title      examBoardSubject {        subject: subjectObject {          qualification {            uniqueCode            __typename          }          __typename        }        __typename      }      __typename    }    subsection {      id      name      uniqueCode      __typename    }    wistiaId    uniqueCode    title    length    duration    extraContent    skipRecapStartTime    preVideoQuestions {      __typename      id      quizContent {        ...UnmarkedQuestion        __typename      }    }    inVideoQuizQuestions(      filter: $inVideoQuestionFilter      order: $inVideoQuestionOrder    ) {      __typename      id      triggerTime      postQuestionResumeTime      quizContent {        __typename        ...UnmarkedQuestion      }    }    __typename  }}fragment UnmarkedQuestion on QuizContent {  __typename  id  stem  quizDefinition {    __typename    questions {      ...UnmarkedQuestionPart      __typename    }  }}fragment UnmarkedQuestionPart on QuizQuestion {  __typename  ... on MultipleChoiceQuestion {    question    description    image    topImage    options {      text      image      __typename    }    __typename  }  ... on MultiMultipleChoiceQuestion {    question    description    image    topImage    options {      text      image      __typename    }    __typename  }  ... on TextQuestion {    question    description    image    topImage    beforeText    afterText    __typename  }  ... on NumericalQuestion {    question    description    image    topImage    beforeText    afterText    __typename  }  ... on MathsQuestion {    question    description    image    topImage    __typename  }  ... on MultipleInputQuestion {    questionSegments {      type: __typename      ... on MultipleInputQuestionText {        text        __typename      }      ... on MultipleInputQuestionBlank {        fieldIndex        __typename      }    }    description    image    topImage    __typename  }  ... on ChemistryQuestion {    question    description    image    topImage    __typename  }  ... on DropdownQuestion {    question    description    image    topImage    dropdownOptions    __typename  }  ... on DrawQuestion {    question    description    image    topImage    drawOn    __typename  }  ... on EngageQuestion {    question    description    image    topImage    __typename  }}";
+
 
 // ===== API =====
-
 async function apiFetch(auth, body) {
     debug("apiFetch");
     debug({ body })
@@ -104,7 +105,7 @@ async function skipVideoLesson() {
                 }
             ]
         },
-        "query": "query GetVideoLesson($uniqueCode: String!, $subsectionUniqueCode: String!, $moduleUniqueCode: String!, $inVideoQuestionFilter: InVideoQuestionFilter, $inVideoQuestionOrder: [InVideoQuestionOrdering]) {  videoLesson(    filter: {uniqueCode: $uniqueCode, subsectionUniqueCode: $subsectionUniqueCode, moduleUniqueCode: $moduleUniqueCode}  ) {    id    module {      id      uniqueCode      title      examBoardSubject {        subject: subjectObject {          qualification {            uniqueCode            __typename          }          __typename        }        __typename      }      __typename    }    subsection {      id      name      uniqueCode      __typename    }    wistiaId    uniqueCode    title    length    duration    extraContent    skipRecapStartTime    preVideoQuestions {      __typename      id      quizContent {        ...UnmarkedQuestion        __typename      }    }    inVideoQuizQuestions(      filter: $inVideoQuestionFilter      order: $inVideoQuestionOrder    ) {      __typename      id      triggerTime      postQuestionResumeTime      quizContent {        __typename        ...UnmarkedQuestion      }    }    __typename  }}fragment UnmarkedQuestion on QuizContent {  __typename  id  stem  quizDefinition {    __typename    questions {      ...UnmarkedQuestionPart      __typename    }  }}fragment UnmarkedQuestionPart on QuizQuestion {  __typename  ... on MultipleChoiceQuestion {    question    description    image    topImage    options {      text      image      __typename    }    __typename  }  ... on MultiMultipleChoiceQuestion {    question    description    image    topImage    options {      text      image      __typename    }    __typename  }  ... on TextQuestion {    question    description    image    topImage    beforeText    afterText    __typename  }  ... on NumericalQuestion {    question    description    image    topImage    beforeText    afterText    __typename  }  ... on MathsQuestion {    question    description    image    topImage    __typename  }  ... on MultipleInputQuestion {    questionSegments {      type: __typename      ... on MultipleInputQuestionText {        text        __typename      }      ... on MultipleInputQuestionBlank {        fieldIndex        __typename      }    }    description    image    topImage    __typename  }  ... on ChemistryQuestion {    question    description    image    topImage    __typename  }  ... on DropdownQuestion {    question    description    image    topImage    dropdownOptions    __typename  }  ... on DrawQuestion {    question    description    image    topImage    drawOn    __typename  }  ... on EngageQuestion {    question    description    image    topImage    __typename  }}"
+        "query": GET_VIDEO_LESSON_QUERY
     };
     const auth = await getAuth();
     const lesson = await apiFetch(auth, getLessonBody);
@@ -123,6 +124,52 @@ async function skipVideoLesson() {
 }
 
 
+
+// ===== TIME =====
+
+async function logTime(mins) {
+    debug("logTime");
+    const url = window.location.href;
+
+    const path = new URL(url).pathname.split('/').filter(Boolean);
+    const [moduleUniqueCode, subsectionUniqueCode, videoUniqueCode] = path.slice(-3);
+    debug({ moduleUniqueCode, subsectionUniqueCode, videoUniqueCode });
+
+    if (videoUniqueCode.slice(-5) != "video") return;
+
+    const getLessonBody = {
+        "operationName": "GetVideoLesson",
+        "variables": {
+            "moduleUniqueCode": moduleUniqueCode,
+            "subsectionUniqueCode": subsectionUniqueCode,
+            "uniqueCode": videoUniqueCode,
+            "inVideoQuestionOrder": [
+                {
+                    "field": "TRIGGER_TIME",
+                    "direction": "ASC"
+                }
+            ]
+        },
+        "query": GET_VIDEO_LESSON_QUERY
+    };
+    const auth = await getAuth();
+    const lesson = await apiFetch(auth, getLessonBody);
+    const videoId = lesson.data.videoLesson.id;
+
+    const secs = mins * 60;
+    const completeLessonBody = {
+        "operationName":"CompleteVideoLesson",
+        "variables": {
+            "lessonId": videoId,
+            "percentWatched": 0.90,
+            "timeSpent": secs
+        },
+        "query":"mutation CompleteVideoLesson($lessonId: ID!, $timeSpent: Decimal!, $percentWatched: Decimal!) {\n  completeVideoLesson(\n    lessonId: $lessonId\n    timeSpent: $timeSpent\n    percentWatched: $percentWatched\n  ) {\n    id\n    timeSpent\n    __typename\n  }\n}"
+    } 
+    await apiFetch(auth, completeLessonBody);
+}
+
+
 // ===== LISTENERS =====
 
 debug("hello world!");
@@ -135,6 +182,9 @@ browser.runtime.onMessage.addListener((msg) => {
             break;
         case "videoSkip":
             skipVideoLesson()
+            break;
+        case "time":
+            logTime(msg.value);
             break;
     }
 });
