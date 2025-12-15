@@ -35,3 +35,17 @@ videoSkip.addEventListener("click", (e) => {
         type: "videoSkip",
     });
 });
+
+// ===== TIME =====
+
+const timeValue = document.querySelector("#time");
+const timeSubmit = document.querySelector("#timeSubmit");
+
+timeSubmit.addEventListener("click", (e) => {
+    mins = parseInt(timeValue.value);
+    sendMessage({
+        type: "time",
+        value: mins
+    });
+});
+

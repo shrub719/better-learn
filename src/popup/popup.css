@@ -32,14 +32,6 @@ body {
     margin: auto;
 }
 
-input[type="button"] {
-    background-color: var(--almost-white);
-    box-shadow: 0 2px 0 0 var(--light-green);
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-}
-
 input {
     accent-color: var(--up-green);
 }
@@ -49,9 +41,27 @@ input:hover {
     background-color: var(--grey);
 }
 
+input[type="button"] {
+    background-color: var(--almost-white);
+    box-shadow: 0 2px 0 0 var(--light-green);
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
 input:active[type="button"] {
     box-shadow: none;
     transform: translateY(2px);
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+input:hover[type="number"] {
+    background-color: var(--almost-white);
 }
 
 p {
