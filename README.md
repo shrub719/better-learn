@@ -11,12 +11,17 @@ Companion extension for [Up Learn](https://uplearn.co.uk/) with a few utility/QO
 
 ## Features
 
-- **Skip video:** skip the content of the current video and only display questions
-- **Log time:** "complete" a video with a given time, in minutes  
-  *Counts as time spent studying*
-- **Video speed:** adjust video speed past normal limits  
-  *Above 3.5x speed, in-video questions will not be triggered*  
-- **Disable fullscreen:** automatically removes fullscreen warnings   
+- **Skip video** 
+    - Skip the content of the current video and only display questions
+- **Log time** 
+    - Use an already-completed video to add a given amount of study time, in minutes  
+    - Maximum time logged at once is 10 \* video length
+- **Video speed**
+    - Adjust video speed past normal limits  
+    - Above 3.5x speed, in-video questions will not be triggered
+- **Disable fullscreen** 
+    - Removes fullscreen warnings
+    - Requires **Always Allow** permission to automatically disable fullscreen (right-click extension icon)  
 
 
 ## Installation
@@ -25,7 +30,7 @@ Companion extension for [Up Learn](https://uplearn.co.uk/) with a few utility/QO
 1. In Firefox, click **Install** above or download `better-learn.xpi` from the [latest release](https://github.com/shrub719/better-learn/releases/latest)
 1. Firefox will ask you to allow github.com to install an add-on: click **Continue to Installation**
 1. Click **Add**
-1. To use **Disable fullscreen**, right-click the extension icon while on [web.uplearn.co.uk](https://web.uplearn.co.uk/) and select **Always Allow on web.uplearn.co.uk** <!-- TODO: do this on install? -->
+1. To automatically **Disable fullscreen**, right-click the extension icon while on [web.uplearn.co.uk](https://web.uplearn.co.uk/) and select **Always Allow on web.uplearn.co.uk**
 
 ### Using Firefox Install Add-on From File
 If the extension wasn't automatically installed:
