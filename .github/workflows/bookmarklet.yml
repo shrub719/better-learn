@@ -30,13 +30,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Pack bookmarklet
-        run: python3 bookmarklet/pack.py
+        run: |
+          python3 bookmarklet/pack.py
+          mkdir deploy
+          cp ./bookmarklet/index.html ./deploy/index.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './bookmarklet/index.html'
+          path: './deploy'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
