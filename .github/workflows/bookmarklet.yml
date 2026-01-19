@@ -3,12 +3,12 @@ name: Deploy bookmarklet to Pages
 on:
   push:
     paths:
-      - 'bookmarklet/**'
+      - 'site/**'
     branches:
       - main
   pull_request:
     paths:
-      - 'bookmarklet/**'
+      - 'site/**'
     branches:
       - main
 
@@ -31,9 +31,9 @@ jobs:
         uses: actions/checkout@v4
       - name: Pack bookmarklet
         run: |
-          python3 bookmarklet/pack.py
+          python3 site/pack.py
           mkdir deploy
-          cp ./bookmarklet/index.html ./deploy/index.html
+          cp ./site/index.html ./deploy/index.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
