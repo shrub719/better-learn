@@ -23,7 +23,7 @@ ESCAPE = {
 
 }
 
-with open("./bookmarklet/script.min.js", "r") as f:
+with open("./site/script.min.js", "r") as f:
     js_file = f.read()
 
 unencoded = "(function(){" + js_file.strip() + "})();"
@@ -37,14 +37,14 @@ for char in unencoded:
 
 bookmarklet = "javascript:" + encoded
 
-with open("./bookmarklet/template.html", "r") as f:
+with open("./site/template.html", "r") as f:
     html_file = f.read()
 
 formatted = html_file.format(href=bookmarklet)
 
-with open("./bookmarklet/bookmarklet.js", "w") as f:
+with open("./site/bookmarklet.js", "w") as f:
     f.write(bookmarklet)
 
-with open("./bookmarklet/index.html", "w") as f:
+with open("./site/index.html", "w") as f:
     f.write(formatted)
 
