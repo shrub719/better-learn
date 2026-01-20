@@ -1,10 +1,11 @@
 <h1 align="center">
-    <img src="src/icons/icon-128.png" alt="Better Learn icon" height="100px"> 
+    <img src="src/icons/icon-128.png" alt="Better Learn icon" height="100px" /> 
     <br />
     Better Learn
     <br />
-    <a href="https://github.com/shrub719/better-learn/releases/latest/download/better-learn.xpi"><img alt="Install for Firefox" src="https://img.shields.io/badge/Firefox-Install-orange"></a>
-    <a href="https://github.com/shrub719/better-learn/releases/latest/download/better-learn.crx"><img alt="Install for Chrome" src="https://img.shields.io/badge/Chrome-Unavailable-lightgrey"></a>
+    <a href="https://github.com/shrub719/better-learn/releases/latest/download/better-learn.xpi"><img alt="Install for Firefox" src="https://img.shields.io/badge/Firefox-Install-orange" /></a>
+    <a href="https://shrub719.github.io/better-learn/"><img alt="Bookmark for mobile" src="https://img.shields.io/badge/Mobile-Bookmark-green" /></a>
+    <a href="https://github.com/shrub719/better-learn/releases/latest/download/better-learn.crx"><img alt="Install for Chrome" src="https://img.shields.io/badge/Chrome-Unavailable-lightgrey" /></a>
 </h1>
 
 Companion extension for [Up Learn](https://uplearn.co.uk/) with a few utility/QOL features.
@@ -13,6 +14,7 @@ Companion extension for [Up Learn](https://uplearn.co.uk/) with a few utility/QO
 
 - **Skip video** 
     - Skip the content of the current video and only display questions
+    - Also available as a [bookmarklet](https://shrub719.github.io/better-learn/) for mobile devices
 - **Log time** 
     - Use an already-completed video to add a given amount of study time, in minutes  
     - Maximum time logged at once is 10 \* video length
@@ -31,6 +33,12 @@ Companion extension for [Up Learn](https://uplearn.co.uk/) with a few utility/QO
 1. Firefox will ask you to allow github.com to install an add-on: click **Continue to Installation**
 1. Click **Add**
 1. To automatically **Disable fullscreen**, right-click the extension icon while on [web.uplearn.co.uk](https://web.uplearn.co.uk/) and select **Always Allow on web.uplearn.co.uk**
+
+### Mobile - ['Bookmark'](https://shrub719.github.io/better-learn/)
+Currently, **Skip video** is the only feature supported by the bookmarklet.
+1. On mobile, click **Bookmark** above or go to the [Better Learn website](https://shrub719.github.io/better-learn/)
+1. Save the bookmarklet by holding the **Better Learn Bookmarklet** button and pressing **Bookmark Link** or similar
+1. Use the bookmarklet by clicking it in your bookmarks menu when in a video lesson to trigger **Skip video**
 
 ### Using Firefox Install Add-on From File
 If the extension wasn't automatically installed:
