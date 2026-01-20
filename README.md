@@ -34,8 +34,8 @@ Companion extension for [Up Learn](https://uplearn.co.uk/) with a few utility/QO
 1. Click **Add**
 1. To automatically **Disable fullscreen**, right-click the extension icon while on [web.uplearn.co.uk](https://web.uplearn.co.uk/) and select **Always Allow on web.uplearn.co.uk**
 
-### Mobile - ['Bookmark'](https://shrub719.github.io/better-learn/)
-Currently, **Skip video** is the only feature supported by the bookmarklet.
+### Mobile - [`Bookmark`](https://shrub719.github.io/better-learn/)
+> **Note:** Currently, **Skip video** is the only feature supported by the bookmarklet.
 1. On mobile, click **Bookmark** above or go to the [Better Learn website](https://shrub719.github.io/better-learn/)
 1. Save the bookmarklet by holding the **Better Learn Bookmarklet** button and pressing **Bookmark Link** or similar
 1. Use the bookmarklet by clicking it in your bookmarks menu when in a video lesson to trigger **Skip video**
